@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2020 crDroid Android Project
+# Copyright (C) 2017-2021 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,9 @@ ifeq ($(EXTRA_FOD_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     FodAnimationResources
 endif
+
+PRODUCT_PACKAGES += \
+    SettingsIntelligenceGooglePrebuilt
 
 ifeq ($(TARGET_HAS_FOD),true)
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-icons
